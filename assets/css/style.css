@@ -1,0 +1,33 @@
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 190.6px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+    pointer-events: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.5s ease, visibility 0.5s ease; 
+}
+
+.overlay.visible {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+
+
+#card {
+    position: relative;
+}
+
+#card-img {
+    display: block; 
+    width: 100%; 
+}
